@@ -22,5 +22,6 @@ namespace TeachMeSkills.DotNet.Task21
             var result = (name:n/5, age:a/5, age2: b/5);
             return result;
         }
+
     }
 }

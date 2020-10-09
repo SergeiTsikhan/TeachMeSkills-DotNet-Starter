@@ -27,7 +27,7 @@ namespace TeachMeSkills.DotNet.Task25
         }
         static int MyReverse(int[]array1)
         {
-            Array.Reverse(array1);
+            Array.Reverse(array1) ;
             return array1[1];
         }
     }

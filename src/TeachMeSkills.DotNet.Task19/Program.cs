@@ -9,26 +9,23 @@ namespace TeachMeSkills.DotNet.Task19
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine(Sqr());
-        }
-        static int Sqr()
-        {
-            int[] masiv = new int[11];
-            for (int i = 1; i<masiv.Length;i++)
+            int[] masiv = new int[100];
+            for (int i = 0; i < masiv.Length; i++)
             {
                 masiv[i] = i;
-                if (i % 1 == 0 && i % i == 0)
+                if ((masiv[i] / 2) % 2 == 0)
                 {
-                    Console.WriteLine($"simple value: {i}");
+                    Console.WriteLine($"Output {masiv[i]} ");
                 }
                 else
                 {
-                    Console.WriteLine($"hard value: {i}");
+                    Console.WriteLine($"Output {masiv[i]}");
                 }
 
             }
-            return 1;
+
         }
+       
+        
     }
 }

@@ -11,16 +11,21 @@ namespace TeachMeSkills.DotNet.Task24
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Input array value");
+            Console.WriteLine("input array value");
             int N = Convert.ToInt32(Console.ReadLine());
             int[] masiv = new int[N];
+            Console.WriteLine("all  odd elemets: ");
             for (int i = 0; i < masiv.Length; i++)
             {
                 masiv[i] = i;
+                if (masiv[i]%2!=0)
+                    Console.WriteLine(masiv[i]);
             }
             int max = masiv.Max();
             int min = masiv.Min();
-            Console.WriteLine("the minimum value in the array: " + max + "\nthe minimum value in the array: " + min);
+            int sum = masiv.Sum();
+            int average = sum / N;
+            Console.WriteLine("the max value in the array: " + max + "\nthe minimum value in the array: " + min + "\n average in the array:" + average);
         }
     }
 }
